@@ -1,0 +1,42 @@
+{
+  "name": "chrome-extension-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "cross-env-shell NODE_ENV=development babel-node --presets env ./server",
+    "build": "cross-env-shell NODE_ENV=production babel-node --presets env ./server"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@babel/preset-env": "^7.14.2",
+    "@vue/babel-plugin-jsx": "^1.0.6",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.2.2",
+    "babel-preset-env": "^1.7.0",
+    "chalk": "^4.1.1",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "copy-webpack-plugin": "^6.0.3",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "express": "^4.17.1",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "html-webpack-plugin": "^4.3.0",
+    "lodash": "^4.17.21",
+    "mini-css-extract-plugin": "^1.6.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "speed-measure-webpack-plugin": "^1.5.0",
+    "ssestream": "^1.1.0",
+    "terser-webpack-plugin": "4.*",
+    "url-loader": "^4.1.1",
+    "vue-loader": "^15.9.7",
+    "webpack": "4.43.0",
+    "webpack-dev-middleware": "^4.2.0",
+    "webpack-hot-middleware": "^2.25.0",
+    "webpackbar": "^5.0.0-3",
+    "yargs": "^17.0.1"
+  },
+  "dependencies": {
+    "vue": "^3.0.11"
+  }
+}
